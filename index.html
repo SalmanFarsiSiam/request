@@ -1,15 +1,158 @@
-<style>
-@font-face {
-    font-family: "Apple Color Emoji";
-    src:
-        url("https://pub-1b01191550c84daab533e7776febe2c2.r2.dev/AppleColorEmoji.woff") format("woff"),
-        url("https://pub-1b01191550c84daab533e7776febe2c2.r2.dev/AppleColorEmoji.ttf") format("truetype");
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-body {
-    font-family: "Apple Color Emoji";
-    font-size: 60px;
-}
-</style>
+    <title>Apple Color Emoji Font Test</title>
 
-👰🏻‍♂️ 🪮 🫵 🫨 🩷 🩵 🩶 🫏 🫎 🪽 🪼 🪻 🫛 🪭 🪮 🪈 🪇 🫸🏻 🫷🏿
+    <style>
+        @font-face {
+            font-family: "Apple Color Emoji";
+            src:
+                url("https://pub-1b01191550c84daab533e7776febe2c2.r2.dev/AppleColorEmoji.woff") format("woff"),
+                url("https://pub-1b01191550c84daab533e7776febe2c2.r2.dev/AppleColorEmoji.ttf") format("truetype");
+            font-style: normal;
+            font-weight: normal;
+            font-display: swap;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            background: #111;
+            color: #fff;
+            font-family: Arial, sans-serif;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            padding: 40px;
+        }
+
+        .container {
+            width: min(1000px, 100%);
+        }
+
+        h1 {
+            font-size: 32px;
+            margin: 0 0 10px;
+        }
+
+        .description {
+            color: #aaa;
+            margin-bottom: 35px;
+        }
+
+        .emoji-box {
+            background: #1b1b1b;
+            border: 1px solid #333;
+            border-radius: 20px;
+            padding: 35px;
+        }
+
+        /*
+         * IMPORTANT:
+         * This element uses ONLY the Apple Color Emoji font.
+         */
+        .emoji {
+            font-family: "Apple Color Emoji" !important;
+            font-size: 72px;
+            line-height: 1.5;
+
+            word-break: break-word;
+        }
+
+        .label {
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #333;
+
+            color: #888;
+            font-size: 14px;
+        }
+
+        .status {
+            margin-top: 20px;
+            padding: 15px;
+            background: #181818;
+            border-radius: 10px;
+
+            font-family: monospace;
+            font-size: 13px;
+            color: #aaa;
+        }
+    </style>
+</head>
+
+<body>
+
+    <main class="container">
+
+        <h1>Apple Color Emoji Test</h1>
+
+        <div class="description">
+            Testing Apple Color Emoji loaded from Cloudflare R2.
+        </div>
+
+        <div class="emoji-box">
+
+            <div class="emoji">
+                😀 😃 😄 😁 😆 😅 😂 🤣 😊 😇 🙂 🙃 😉 😌 😍 🥰 😘 😗 😙 😚
+                😋 😛 😝 😜 🤪 🤨 🧐 🤓 😎 🤩 🥳
+                😏 😒 😞 😔 😟 😕 🙁 ☹️ 😣 😖 😫 😩 🥺 😢 😭 😤 😠 😡 🤬
+                🤯 😳 🥵 🥶 😱 😨 😰 😥 😓 🤗 🤔 🫣 🤭 🫢 🫡 🤫 🤥 😶 🫠
+                😐 🫤 😑 😬 🙄 😯 😦 😧 😮 😲 🥱 😴 🤤 😪 😵 🤐 🥴 🤢 🤮
+                🤧 😷 🤒 🤕
+                ❤️ 🧡 💛 💚 💙 💜 🖤 🤍 🤎 🩷 🩵 🩶
+                💔 ❤️‍🔥 ❤️‍🩹 💕 💞 💓 💗 💖 💘 💝 💟
+                👍 👎 👌 ✌️ 🤞 🤟 🤘 🤙 👈 👉 👆 👇 ☝️ ✋ 🤚 🖐️ 🖖
+                👋 🤏 💪 🙏 👏 🙌 🫶 🫵
+                👀 👁️ 👄 👅
+                🔥 ⭐ 🌟 ✨ 💫 ⚡ ☀️ 🌙 🌈 ❄️
+                🍎 🍏 🍊 🍋 🍌 🍉 🍇 🍓 🫐 🍒 🍑 🍍 🥝 🥭
+                🍕 🍔 🍟 🌭 🌮 🌯 🍿 🍩 🍪 🎂 🍰 🧁
+                🐶 🐱 🐭 🐹 🐰 🦊 🐻 🐼 🐨 🐯 🦁 🐮 🐷 🐸
+                🐵 🙈 🙉 🙊 🐔 🐧 🐦 🦆 🦅 🦉 🐺 🐗 🐴 🦄
+                🐝 🦋 🐌 🐞 🐜 🕷️ 🦂 🐢 🐍 🦎 🦖 🦕
+                🐳 🐋 🐬 🐟 🐠 🦈 🐙 🦀 🦞 🦐
+                🫎 🫏 🪽 🪼 🪻 🫛 🪭 🪈 🪇
+                🚗 🚕 🚙 🚌 🚎 🏎️ 🚓 🚑 🚒 🚲 🛵 ✈️ 🚀
+                🎮 🕹️ 🎧 🎵 🎶 🎸 🎹 🥁
+                💻 🖥️ ⌨️ 🖱️ 📱 📷 🎥
+                ⚽ 🏀 🏈 ⚾ 🎾 🏆 🥇 🥈 🥉
+                🇧🇩 🇺🇸 🇯🇵 🇬🇧 🇨🇦 🇦🇺 🇰🇷 🇨🇳
+            </div>
+
+            <div class="label">
+                Apple Color Emoji — WOFF + TTF
+            </div>
+
+            <div class="status" id="status">
+                Checking font...
+            </div>
+
+        </div>
+
+    </main>
+
+    <script>
+        document.fonts.ready.then(() => {
+            const loaded = document.fonts.check(
+                '72px "Apple Color Emoji"'
+            );
+
+            document.getElementById("status").textContent =
+                loaded
+                    ? "✓ Apple Color Emoji font loaded"
+                    : "✗ Apple Color Emoji font NOT loaded";
+        });
+    </script>
+
+</body>
+</html>
